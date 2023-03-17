@@ -27,6 +27,17 @@ function MovieForm() {
       .then((data) => {
         console.log(data);
       });
+    setFormData({
+      title: "",
+      year: new Date().getFullYear(),
+      length: "0",
+      director: "",
+      description: "",
+      poster_url: "",
+      category: "",
+      discount: false,
+      female_director: false,
+    })
   }
 
   function handleChange(e) {
